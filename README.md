@@ -3,5 +3,5 @@
 
 <p>to run:</p>
 <ul>$ bash run.sh</ul>
-<p>or</p>
+<p>or:</p>
 <ul>$ g++ main.cpp -o app && ./app</ul>
