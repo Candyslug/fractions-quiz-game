@@ -91,6 +91,7 @@ struct fractions {
         a = list[i].answer();
       }
     }
+    answer = a;
     cout<< " = ? ";
     cout<<endl;
   }
