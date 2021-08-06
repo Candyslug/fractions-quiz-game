@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-int total_fractions = 2;
+int total_fractions = 4;
 int numerator_min = 1;
 int numerator_max = 10;
 int denominator_min = 1;
@@ -46,7 +46,7 @@ struct fractions {
       list[i].reveal();
     }
   }
-  void reveal_op(int i, bool show_answer = false) {
+  void reveal_op(int i) {
     if (i==0)
       cout<<" + ";
     else if (i==1)
@@ -62,7 +62,7 @@ struct fractions {
     int op;
     for (int i = 0; i < list.size(); i++) {
       if (a != 0) {
-        op = rand_int(0, 4); 
+        op = rand_int(0, 5); 
         switch (op) {
           case 0:
             a += list[i].answer(); 
